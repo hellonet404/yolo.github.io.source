@@ -51,5 +51,7 @@ jobs:
           git config --global user.email 'chihongliang521@gmail.com'
       - name: 发布博客 
         run: |
+          cd ./blog
+          ls
           hexo clean 
           hexo deploy
