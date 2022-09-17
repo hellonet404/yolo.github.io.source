@@ -6,9 +6,9 @@ name: Hexo Blog CI
 on:
   # Triggers the workflow on push or pull request events but only for the "master" branch
   push:
-    branches: [ "master" ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ "master" ]
+    branches: [ "main" ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -23,20 +23,20 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - name: Checkout Repository master branch
+      - name: 检查main分支
         uses: actions/checkout@v3
       
-      - name: Setup Node.js 12.x
+      - name: 选择 Node.js 版本
         uses: actions/setup-node@master
         with: 
           node-version: "12.x"
 
-      - name: Setup Hexo Dependencies
+      - name: 安装HEXO脚手架
         run: |
           npm install hexo-cli -g
           npm install
     
-      - name: Setup Deploy Private Key
+      - name: 创建SSH配置
         env:
           HEXO_DEPLOY_KEY: ${{ secrets.HEXO_DEPLOY_KEY }}
         run: |
@@ -45,12 +45,11 @@ jobs:
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan github.com >> ~/.ssh/known_hosts
         
-      - name: Setup Git Infomation
+      - name: 设置git config
         run: | 
           git config --global user.name 'yolo' 
           git config --global user.email 'chihongliang521@gmail.com'
-      - name: Deploy Hexo 
+      - name: 发布博客 
         run: |
-          hexo clean
-          hexo generate 
+          hexo clean 
           hexo deploy
