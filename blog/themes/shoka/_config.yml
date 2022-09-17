@@ -38,10 +38,10 @@ loader:
 fireworks:
   enable: true
   color:
-    # - "rgba(255,182,185,.9)"
-    # - "rgba(250,227,217,.9)"
-    # - "rgba(187,222,214,.9)"
-    # - "rgba(138,198,209,.9)"
+    - "rgba(255,182,185,.9)"
+    - "rgba(250,227,217,.9)"
+    - "rgba(187,222,214,.9)"
+    - "rgba(138,198,209,.9)"
 
 font:
   enable: true
@@ -125,7 +125,7 @@ sidebar:
   position: right
   # position: right
   # Replace the default avatar image and set the url here.
-  avatar: avatar.jpg
+  avatar: yolo.jpg
 
 widgets:
   # if true, will show random posts
@@ -135,7 +135,7 @@ widgets:
 
 footer:
   # Specify the date when the site was setup. If not defined, current year will be used.
-  since: 2010
+  since: 2022
   icon:
     name: sakura rotate
     # Change the color of icon, using Hex Code.
@@ -215,13 +215,8 @@ valine:
 
 # bgm
 audio:
-  # - title: 列表1
-  #   list:
-  #    - https://music.163.com/#/playlist?id=2943811283
-  #    - https://music.163.com/#/playlist?id=2297706586
-  # - title: 列表2
-  #   list:
-  #    - https://music.163.com/#/playlist?id=2031842656
+  - https://music.163.com/#/my/m/music/playlist?id=2916766519
+  - https://music.163.com/#/my/m/music/playlist?id=7045690439
 
 # random image api
 image_server: # "https://acg.xydwz.cn/api/api.php"
