@@ -33,6 +33,7 @@ jobs:
 
       - name: 安装HEXO脚手架
         run: |
+          cd ./blog
           npm install hexo-cli -g
           npm install
     
