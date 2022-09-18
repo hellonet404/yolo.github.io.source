@@ -1,9 +1,9 @@
 ---
-title: C#中的字典
+title: CSharp中的字典
 tags:
   - Dictionary
 categories:
-  - 基础数据接口
+  - 基础数据结构
 date: 2022-09-18 12:30:45
 ---
 
@@ -201,4 +201,3 @@ public class Dictionary<Tkey, TValue>
         }
     }
 ```
-
