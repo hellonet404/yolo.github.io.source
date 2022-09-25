@@ -9,7 +9,7 @@ date: 2022-09-18 12:30:45
 
 ##### Diciotnary
 
-```c#
+```csharp
 public class Dictionary<Tkey, TValue>
     {
         private int[] buckets;
