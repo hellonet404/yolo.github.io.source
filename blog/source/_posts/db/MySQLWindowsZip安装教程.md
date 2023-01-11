@@ -13,7 +13,7 @@ date: 2023-01-11 21:19:43
 
 ##### [mysql](https://dev.mysql.com/downloads/mysql/) 
 
-![mysql_download](..\images\mysql_download.jpg)
+![mysql_download.jpg](https://s2.loli.net/2023/01/11/2nlvPtygNRSpGcb.jpg)
 
 ##### 创建my.ini配置文件
 
